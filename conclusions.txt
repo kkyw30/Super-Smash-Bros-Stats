@@ -1,0 +1,21 @@
+Our data analysis reveals that in terms of win percentage, ROB is my best main, with a win percentage of approximate 76%. (The order goes ROB, Bowser, Chrom, Roy, 
+according to win percentage data). This is reflected in the Gaussian distributions of the expected stocks taken for each of the characters: from the Gaussian, the 
+win probability can be thought of as the area under the curve past x = 3 (since we need to take 3 stocks to win). 
+
+In addition, for all the characters, the percent to kills efficiencies are the lowest for games that we win (and highest for games that we lose). This is to be 
+expected--after all, if we can take more kills with fewer hits, it becomes more likely that we will win the game. Furthermore, the expected number of stocks taken 
+decreases almost linearly with increasing efficiency. This means that when our attacks become more inefficient (i.e. we have to deal more percent damage for each kill)
+it becomes harder for us to take our opponents' stocks. This strong negative correlation is present in the data for all the characters.
+
+It is interesting to note that there is no correlation between the percent we deal to our opponent and the percent damage dealt to us. This means that either metric 
+is a very poor predictor of the other. Intuitively, this makes sense--when our opponent deals us a lot of damage, we could be either losing very badly (in which case 
+we don't deal a lot of percent damage), or we could be in a very close game (in which case we also deal a lot of percent damage). Conversely, when our opponent deals 
+us very little damage, we could either be winning comfortably (dealing a lot of damage), or we could also be doing poorly (doing little damage). This uncorrelated 
+trend is present for all the characters, as evidenced by flat lines of best fit. 
+
+In addition, for all the characters, the probability of winning a game increases (almost linearly) with percent damage done. This makes sense--as we deal more damage 
+to our opponent, it becomes less likely that they're able to retain their stocks. 
+
+Future work includes developing a more refined model of predicting in-game win probabilities, likely based on a combination of the current stock difference, time 
+remaining, and percent difference, along with adjustment factors like how heavy and how quick the respective characters are. Furthermore, more research can be done 
+to ascertain the effect of self-destructs and quick kills (e.g. "spikes") on the data. 
